@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Medication Dose Tracker</h1>
+
+    <div class="tracker-container">
+        <div class="med-panel">
+            <button id="paracetamolBtn">Take Paracetamol</button>
+            <p class="last-taken-label">Time Since Last Dose:</p>
+            <div id="paracetamolTimer" class="timer-display">&mdash;</div>
+        </div>
+
+        <div class="med-panel">
+            <button id="ibuprofenBtn">Take Ibuprofen</button>
+            <p class="last-taken-label">Time Since Last Dose:</p>
+            <div id="ibuprofenTimer" class="timer-display">&mdash;</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Dose History (Most Recent on Top)</h2>
+    <ul id="historyList" class="history-list">
+        </ul>
+
+    <button id="clearHistoryBtn" class="clear-button">Clear All History</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
